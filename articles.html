@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Articles - Some Technical Articles by UnknownTech</title>
+    <meta name="description" content="Latest Tech Articles of popular topics - UnknownTech">
+    <link rel="icon" href="images/logos/ut.jpg">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <meta name="keywords" content="Welcome to Article Page of UnknownTech | Here you will find Tech Articles | UnknownTech - reviews & comparison of Hardware components, Software, Applicatons, smartphone, tablets, cpu, gpu - [No-Ads | Simple UI]">
+    <style>
+        .text-post{
+            text-align: center;
+            margin: auto;
+
+        }
+    </style>
+</head>
+<body>
+     <!-- load  -->
+     <div id="loader" class="center"></div> 
+     <script> 
+         document.onreadystatechange = function() { 
+             if (document.readyState !== "complete") { 
+                 document.querySelector( 
+                 "body").style.visibility = "hidden"; 
+                 document.querySelector( 
+                 "#loader").style.visibility = "visible"; 
+             } else { 
+                 document.querySelector( 
+                 "#loader").style.display = "none"; 
+                 document.querySelector( 
+                 "body").style.visibility = "visible"; 
+             } 
+         }; 
+     </script> 
+     <div class="scroll-up-btn">
+         <i class="fas fa-angle-up"></i>
+     </div>
+     <!-- load  -->
+    <header class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+            <a class="mr-5 hover:text-white" href="index.html">Home</a>
+            <a class="mr-5 hover:text-white" href="about.html">About</a>
+            <a class="mr-5 hover:text-white" href="articles.html">Articles</a>
+            <!-- <a class="hover:text-white" href="cpureview.html">CpuReviews</a> -->
+          </nav>
+          <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24"> -->
+              <img src="images/logos/ut.jpg" alt="network problem" width="30" height="24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl xl:block lg:hidden">UnknownTech - Articles</span>
+          </a>
+          <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+            <a href="posts.html">
+            <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">All Posts
+              <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg> -->
+            </button></a>
+          </div>
+        </div>
+      </header>
+       <!-- title  -->
+       <!-- <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
+            <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-white text-hed"><big><big><big>All Posts</big></big></big></h1>
+          </div>
+        </div>
+      </section> -->
+     <!-- h1  -->
+     <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-12">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">All Tech Articles</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">You Will Find Our All Tech Related Articles Here.</p>
+          </div>
+        </div>
+      </section>
+     <!-- h1  -->
+      <!-- title  -->
+       <!-- post  -->
+       <!-- <div class="p-12 md:w-1/2 flex flex-col items-start">
+        <span class="inline-block py-1 px-2 rounded bg-gray-800 text-gray-400 text-opacity-75 text-xs font-medium tracking-widest">Tech Comparison | Tech Article</span>
+        <h2 class="sm:text-3xl text-2xl title-font font-medium text-white mt-4 mb-4">Best Mid-Range Mobile Companies in the market.</h2>
+        <p class="leading-relaxed mb-8">Best Mid-Range Mobile Companies in the market.
+          <br>
+          Mid Range is the Price Range of 10K - 35K
+          <br>
+          All Company is best in their own in Mid-Range.
+        <br>
+      Click on Learn More for Read full article</p>
+        <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-800 border-opacity-75 mt-auto w-full">
+          <a class="text-indigo-400 inline-flex items-center" href="post2.html">Learn More
+            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"></path>
+              <path d="M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <a class="inline-flex items-center">
+          <img alt="blog" src="images/logos/ss.jpg" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+          <span class="flex-grow flex flex-col pl-4">
+            <span class="title-font font-medium text-white">Shivang Sharma</span>
+            <span class="text-gray-500 text-xs tracking-widest mt-0.5">Owner</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section> -->
+<section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -m-12">
+      <div class="p-12 md:w-1/2 flex flex-col items-start">
+        <span class="inline-block py-1 px-2 rounded bg-gray-800 text-gray-400 text-opacity-75 text-xs font-medium tracking-widest">Tech Comparison | Article</span>
+        <h2 class="sm:text-3xl text-2xl title-font font-medium text-white mt-4 mb-4">Samsung Exynos 2100 Edition vs Qualcomm 888 Edition - Just for Samsung S21 Ultra </h2>
+        <p class="leading-relaxed mb-8">Samsung Exynos 2100 Edition vs Qualcomm 888 Edition - Just for Samsung S21 Ultra 
+          <br>
+          When do you compare two processors what will come to your mind?
+          <br>
+          is it  specifications or benchmark
+          <br>
+          But today we will compare two mobile processor  legends of the market with a live test
+          <br>
+        For Reading Full article click on Learn More.</p>
+        <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-800 border-opacity-75 mt-auto w-full">
+          <a class="text-indigo-400 inline-flex items-center" href="post3.html">Learn More
+            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"></path>
+              <path d="M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <a class="inline-flex items-center">
+          <img alt="blog" src="images/logos/ss.jpg" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+          <span class="flex-grow flex flex-col pl-4">
+            <span class="title-font font-medium text-white">Shivang Sharma</span>
+            <span class="text-gray-500 text-xs tracking-widest mt-0.5">Owner</span>
+          </span>
+        </a>
+      </div>
+      <div class="p-12 md:w-1/2 flex flex-col items-start">
+        <span class="inline-block py-1 px-2 rounded bg-gray-800 text-gray-400 text-opacity-75 text-xs font-medium tracking-widest">Tech Comparison | Article</span>
+        <h2 class="sm:text-3xl text-2xl title-font font-medium text-white mt-4 mb-4">Mi 11 Ultra Vs Samsung S21 Ultra | Legend are Back [ #S21 Ultra vs #Mi 11 Utra]</h2>
+        <p class="leading-relaxed mb-8">Mi 11 Ultra Vs Samsung S21 Ultra [ Legends of Android Mobile Community. ]
+          <br>
+          Why Mi 11 Ultra? | Why Samsung s21 Ultra?
+        <br>
+      If you want to read full article click on Learn More.</p>
+        <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-800 border-opacity-75 mt-auto w-full">
+          <a class="text-indigo-400 inline-flex items-center" href="post4.html">Learn More
+            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"></path>
+              <path d="M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <a class="inline-flex items-center">
+          <img alt="blog" src="images/logos/ss.jpg" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+          <span class="flex-grow flex flex-col pl-4">
+            <span class="title-font font-medium text-white">Shivang Sharma</span>
+            <span class="text-gray-500 text-xs tracking-widest mt-0.5">Owner</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+      <!-- post  -->
+      <!-- taskbar  -->
+      <footer class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg> -->
+            <img src="images/logos/ut.jpg" alt="network problem" width="30" height="24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+            <span class="ml-3 text-xl">UnknownTech</span>
+          </a>
+          <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2021 UnknownTech —
+            <a href="https://itsunknown.tk" class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">All rights reserved</a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <!-- <a class="text-gray-400">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a> -->
+            <!-- <a class="ml-3 text-gray-400">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a> -->
+            <a class="ml-3 text-gray-400" href="https://instagram.com/itsunknown.in">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <!-- <a class="ml-3 text-gray-400">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a> -->
+          </span>
+        </div>
+      </footer>
+      <!-- taskbar  -->
+</body>
+</html>
